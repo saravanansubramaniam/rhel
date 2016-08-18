@@ -54,6 +54,14 @@ namespace rhel
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "default2",
+                    template: "{controller=Home}/{action=About}/{id?}");
+
+                routes.MapRoute(
+                    name: "default3",
+                    template: "{controller=Home}/{action=Contact}/{id?}");
             });
         }
     }
